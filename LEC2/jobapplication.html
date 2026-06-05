@@ -1,0 +1,97 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            background-color: lightblue;
+        }
+
+        h1{
+            text-align: center;
+            color: darkred;
+        }
+
+        table{
+            margin: auto;
+            background-color: rgb(240, 240, 8);
+            border: 3px solid red;
+            padding: 15px;
+        }
+
+        td{
+            padding: 8px;
+        }
+
+        .button{
+            background-color: red;
+            color: white;
+            padding: 5px 15px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>JOB APPLICATION FORM</h1>
+
+<form>
+
+<table>
+
+<tr>
+    <td>Full Name</td>
+    <td><input type="text"></td>
+</tr>
+
+<tr>
+    <td>Email</td>
+    <td><input type="email"></td>
+</tr>
+
+<tr>
+    <td>Phone Number</td>
+    <td><input type="tel"></td>
+</tr>
+
+<tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+    </td>
+</tr>
+
+<tr>
+    <td>Skills</td>
+    <td>
+        <input type="checkbox"> HTML <br>
+        <input type="checkbox"> CSS <br>
+        <input type="checkbox"> Java <br>
+        <input type="checkbox"> Python <br>
+    </td>
+</tr>
+
+<tr>
+    <td>Resume Upload</td>
+    <td><input type="file"></td>
+</tr>
+
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Apply Now" class="button">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
+
