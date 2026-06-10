@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANEESHBLOGS - Explore Rajasthan</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+    background:url("RAJASTAN.jpg");
+    background-size:cover;
+    background-position:center;
+    height:550px;
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,0.5);
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+    color:gold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    margin-top:140px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:orange;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#ff6600;
+}
+
+/* Main Layout */
+
+.container{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    gap:20px;
+}
+
+/* Blog Section */
+
+.blogs{
+    flex:3;
+}
+
+.blog-card{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.blog-card h2{
+    color:#00695c;
+    margin-bottom:15px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.blog-card p{
+    line-height:1.8;
+    color:#444;
+}
+
+.read-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#2e8b57;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    flex:1;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.box h3{
+    color:#ff6600;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.box img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+}
+
+.box p{
+    margin-top:10px;
+    text-align:center;
+}
+
+.box ul{
+    padding-left:20px;
+}
+
+.box li{
+    margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+    <div class="logo">ANEESHBLOGS</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Explore Rajasthan</h1>
+    <p>Royal Palaces • Golden Deserts • Beautiful Lakes</p>
+    <button>Start Journey</button>
+</div>
+
+</header>
+
+<div class="container">
+
+<!-- BLOG SECTION -->
+
+<div class="blogs">
+
+<!-- JAIPUR -->
+
+<div class="blog-card">
+
+<h2>Jaipur - The Pink City</h2>
+
+<div class="gallery">
+    <img src="HAWAMAHAL.jpg" alt="Hawa Mahal">
+    <img src="AMBERFORT.jpg" alt="Amber Fort">
+    <img src="CITYPALACE.jpg" alt="City Palace">
+    <img src="JAIPURMARKET.jpg" alt="Jaipur Market">
+</div>
+
+<p>
+Jaipur, known as the Pink City, is one of Rajasthan's most
+famous destinations. Explore the stunning Hawa Mahal,
+Amber Fort, City Palace and vibrant local markets that
+showcase Rajasthan's rich culture and heritage.
+</p>
+
+<a href="#" class="read-btn">Read More</a>
+
+</div>
+
+<!-- UDAIPUR -->
+
+<div class="blog-card">
+
+<h2>Udaipur - The City of Lakes</h2>
+
+<div class="gallery">
+    <img src="lake-pichola.jpg" alt="Lake Pichola">
+    <img src="city-palace-udaipur.jpg" alt="City Palace">
+    <img src="JALMANDIR.png" alt="Jal Mandir">
+    <img src="fatehsagar.png" alt="Fateh Sagar">
+</div>
+
+<p>
+Udaipur is famous for its beautiful lakes and magnificent
+palaces. A boat ride on Lake Pichola and a visit to City
+Palace make Udaipur one of the most romantic cities in India.
+</p>
+
+<a href="#" class="read-btn">Read More</a>
+
+</div>
+
+<!-- JAISALMER -->
+
+<div class="blog-card">
+
+<h2>Jaisalmer - The Golden City</h2>
+
+<div class="gallery">
+    <img src="jaisalmer-fort.png" alt="Jaisalmer Fort">
+    <img src="camelsafari.png" alt="Camel Safari">
+    <img src="thardesert.png" alt="Thar Desert">
+    <img src="patwon ki hawali.png" alt="Patwon Ki Haveli">
+</div>
+
+<p>
+Located in the heart of the Thar Desert, Jaisalmer is known
+for its golden sandstone architecture, desert safaris and
+historic forts. It offers an unforgettable desert experience.
+</p>
+
+<a href="#" class="read-btn">Read More</a>
+
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="box">
+    <h3>About Me</h3>
+
+    <img src="profile.jpeg" alt="">
+
+    <p>
+    Hi, I'm Aneesh. I love exploring historical places,
+    deserts and cultural destinations. Welcome to
+    ANEESHBLOGS.
+    </p>
+</div>
+
+<div class="box">
+    <h3>Top Destinations</h3>
+
+    <ul>
+        <li>Jaipur</li>
+        <li>Udaipur</li>
+        <li>Jaisalmer</li>
+        <li>Mount Abu</li>
+        <li>Pushkar</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h3>Travel Tips</h3>
+
+    <ul>
+        <li>Carry Water Bottles</li>
+        <li>Wear Comfortable Shoes</li>
+        <li>Try Rajasthani Food</li>
+        <li>Carry Sunscreen</li>
+        <li>Visit During Winter</li>
+    </ul>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+    <h2>ANEESHBLOGS</h2>
+    <p>Explore • Dream • Discover Rajasthan</p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
