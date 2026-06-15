@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essence of Madurai</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4ead7;
+    font-family:"Times New Roman", serif;
+    color:#4a3a2a;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:url("essofmadurai.png");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.hero-content{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:80%;
+
+    max-width:900px;
+
+    background:rgba(62,39,35,0.75);
+
+    padding:20px 30px;
+
+    border-left:5px solid #d4af37;
+
+    border-radius:10px;
+
+    backdrop-filter:blur(3px);
+}
+
+.hero-content p{
+
+    color:#f5deb3;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    text-align:center;
+
+    font-family:Georgia, serif;
+}
+
+/* CATEGORY */
+
+.category{
+    padding:70px 50px;
+    background:#f8f1e4;
+}
+
+.category:nth-child(even){
+    background:#f3e7d3;
+}
+
+.category h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:45px;
+    color:#5c3b1e;
+    font-family:Georgia, serif;
+    letter-spacing:2px;
+}
+
+.category h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:3px;
+    background:#8b6914;
+    margin:15px auto;
+}
+
+/* MENU */
+
+.menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* CARD */
+
+.card{
+    width:290px;
+    background:#fff8ee;
+    border:2px solid #c8a97e;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#6b4226;
+    font-size:24px;
+    font-family:Georgia, serif;
+}
+
+.card p{
+    padding:0 15px;
+    color:#555;
+    line-height:1.6;
+}
+
+.card span{
+    display:block;
+    padding:15px;
+    color:#8b6914;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#8b6914;
+    box-shadow:0 12px 28px rgba(92,59,30,0.35);
+}
+
+/* FOOTER */
+
+footer{
+    background:#3e2723;
+    color:#f5deb3;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    margin-bottom:10px;
+    font-family:Georgia, serif;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .category{
+        padding:50px 20px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .category h2{
+        font-size:35px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO IMAGE -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <p>
+            Welcome to Essence of Madurai, where every dish tells a story of
+            tradition, culture, and authentic South Indian flavors. From the
+            world-famous Madurai Kari Dosai and aromatic Biryanis to refreshing
+            Jigarthanda and traditional sweets, we bring the heart of Madurai
+            to your table with love and heritage.
+        </p>
+
+    </div>
+
+</header>
+<!-- BREAKFAST -->
+
+<section class="category">
+
+<h2>Breakfast</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="idli.jpg">
+<h3>Idli with Chicken Curry</h3>
+<p>Soft steamed idlis served with spicy Madurai-style chicken curry.</p>
+<span>₹120</span>
+</div>
+
+<div class="card">
+<img src="pongal.jpg">
+<h3>Ven Pongal</h3>
+<p>Traditional rice and moong dal dish enriched with ghee and pepper.</p>
+<span>₹90</span>
+</div>
+
+<div class="card">
+<img src="chickenkaridosai.jpg">
+<h3>Chicken Kari Dosai</h3>
+<p>Crispy dosa topped with flavorful chicken masala, a Madurai favorite.</p>
+<span>₹180</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- LUNCH -->
+
+<section class="category">
+
+<h2>Lunch</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="chickenbriyani.jpg">
+<h3>Chicken Biryani</h3>
+<p>Fragrant rice cooked with tender chicken and aromatic spices.</p>
+<span>₹220</span>
+</div>
+
+<div class="card">
+<img src="muttonbriyani.jpg">
+<h3>Mutton Biryani</h3>
+<p>Authentic Madurai-style biryani with juicy mutton pieces.</p>
+<span>₹280</span>
+</div>
+
+<div class="card">
+<img src="gheericechicken.jpg">
+<h3>Ghee Rice with Chicken Gravy</h3>
+<p>Aromatic ghee rice served with rich chicken gravy.</p>
+<span>₹180</span>
+</div>
+
+<div class="card">
+<img src="gheericemutton.jpg">
+<h3>Ghee Rice with Mutton Gravy</h3>
+<p>Flavorful ghee rice paired with traditional mutton gravy.</p>
+<span>₹220</span>
+</div>
+
+<div class="card">
+<img src="kolaurundai.jpg">
+<h3>Mutton Kola Urundai</h3>
+<p>Traditional minced mutton balls, crispy outside and juicy inside.</p>
+<span>₹160</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- DINNER -->
+
+<section class="category">
+
+<h2>Dinner</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="parotta.jpg">
+<h3>Parotta</h3>
+<p>Soft flaky layered parotta served with flavorful salna.</p>
+<span>₹60</span>
+</div>
+
+<div class="card">
+<img src="chickenkaridosai.jpg">
+<h3>Chicken Kari Dosai</h3>
+<p>Madurai special dosa topped with spicy chicken masala.</p>
+<span>₹180</span>
+</div>
+
+<div class="card">
+<img src="muttonkaridosai.jpg">
+<h3>Mutton Kari Dosai</h3>
+<p>Thick dosa layered with rich and spicy mutton topping.</p>
+<span>₹220</span>
+</div>
+
+<div class="card">
+<img src="pppp.png">
+<h3>Prawn Kari Dosai</h3>
+<p>Soft Kal Dosa layered with spicy prawn masala and herbs.</p>
+<span>₹240</span>
+</div>
+
+<div class="card">
+<img src="parotta.jpg">
+<h3>Kothu Parotta</h3>
+<p>Shredded parotta tossed with spices and traditional salna.</p>
+<span>₹160</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- SWEETS -->
+
+<section class="category">
+
+<h2>Sweets</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="butterbun.jpg">
+<h3>Butter Bun</h3>
+<p>Soft bun filled with creamy butter, a tea-time delight.</p>
+<span>₹50</span>
+</div>
+
+<div class="card">
+<img src="gulabjamun.jpg">
+<h3>Gulab Jamun</h3>
+<p>Soft milk-solid dumplings soaked in aromatic sugar syrup.</p>
+<span>₹70</span>
+</div>
+
+<div class="card">
+<img src="rasamaalai.jpg">
+<h3>Rasamalai</h3>
+<p>Soft cottage cheese dumplings served in saffron flavored milk.</p>
+<span>₹90</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- DRINKS -->
+
+<section class="category">
+
+<h2>Drinks</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="jigarthanda.jpg">
+<h3>Jigarthanda</h3>
+<p>Madurai's iconic chilled drink made with milk and ice cream.</p>
+<span>₹80</span>
+</div>
+
+<div class="card">
+<img src="lemonmint.jpg">
+<h3>Mint Lemon Soda</h3>
+<p>Refreshing blend of lemon, mint and soda.</p>
+<span>₹60</span>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>ESSENCE OF MADURAI</h2>
+
+<p>Taste the Heritage • Feel the Love ❤️</p>
+
+</footer>
+
+</body>
+</html>
