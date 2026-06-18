@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0B132B;
+    color:#F8F9FA;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#1C2541 !important;
+}
+
+.navbar-brand{
+    color:#FFD166 !important;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.nav-link:hover{
+    color:#FFD166 !important;
+}
+
+/* Hero Section */
+
+.hero{
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:80vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#FFD166;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-top:10px;
+}
+
+/* Section Heading */
+
+.section-title{
+    text-align:center;
+    color:#FFD166;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+/* Cards */
+
+.card{
+    background:#243B55;
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-title{
+    color:#FFD166;
+    font-weight:bold;
+}
+
+.card-text{
+    color:#E5E5E5;
+}
+
+/* Buttons */
+
+.btn-primary{
+    background:#06D6A0;
+    border:none;
+    color:black;
+    font-weight:bold;
+}
+
+.btn-primary:hover{
+    background:#05B88A;
+}
+
+.btn-warning{
+    background:#FFD166;
+    border:none;
+    color:black;
+    font-weight:bold;
+}
+
+/* Booking Form */
+
+.booking{
+    background:#1C2541;
+    padding:40px;
+    border-radius:15px;
+}
+
+.form-control,
+.form-select{
+    background:#243B55;
+    color:white;
+    border:none;
+}
+
+.form-control::placeholder{
+    color:#d1d1d1;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border:2px solid #FFD166;
+    box-shadow:none;
+    background:#243B55;
+    color:white;
+}
+
+/* Contact Section */
+
+#contact{
+    padding:50px 0;
+}
+
+#contact h2{
+    color:#FFD166;
+}
+
+/* Footer */
+
+footer{
+    background:#1C2541;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.card img{
+    height:180px;
+}
+
+}
